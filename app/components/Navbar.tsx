@@ -1,14 +1,16 @@
+import Link from "next/link";
+
 export const Navbar = () => {
   return (
     <>
       <div className=" bg-gray-800">
         <header className="relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 text-blue-900 md:mx-auto md:flex-row md:items-center">
-          <a
+          <Link
             href="#"
             className="flex cursor-pointer items-center whitespace-nowrap text-2xl font-black text-blue-500"
           >
             Essence IT
-          </a>
+          </Link>
           <input type="checkbox" className="peer hidden" id="navbar-open" />
           <label
             className="absolute top-5 right-7 cursor-pointer md:hidden text-blue-600"
@@ -36,13 +38,13 @@ export const Navbar = () => {
           >
             <ul className="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
               <li className="font-bold text-gray-100 md:mr-12">
-                <a href="#">About Us</a>
+                <Link href="#">About Us</Link>
               </li>
               <li className="text-gray-100 md:mr-12">
-                <a href="#">Rules</a>
+                <Link href="#">Rules</Link>
               </li>
               <li className="text-gray-100 md:mr-12">
-                <a href="#">Policies</a>
+                <Link href="#">Policies</Link>
               </li>
               <li className="md:mr-12">
                 <button className="rounded-full border-2 border-white px-6 py-1 font-medium text-white transition-colors hover:bg-white hover:text-gray-700">
@@ -81,13 +83,13 @@ export const Navbar = () => {
                 <p className="text-base text-gray-400"></p>
               </div>
               <div className="mt-10 flex flex-col items-center md:flex-row">
-                <a
+                <Link
                   href="/"
                   className="mb-3 inline-flex h-12 w-full items-center justify-center rounded bg-blue-700 px-6 font-medium tracking-wide text-white shadow-md transition md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-blue-800"
                 >
                   ...
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/"
                   aria-label=""
                   className="group inline-flex items-center font-semibold text-white"
@@ -107,7 +109,7 @@ export const Navbar = () => {
                       d="M17 8l4 4m0 0l-4 4m4-4H3"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="relative hidden lg:ml-32 lg:block lg:w-1/2">

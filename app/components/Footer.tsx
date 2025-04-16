@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const Footer = () => {
   return (
     <>
@@ -44,35 +46,35 @@ export const Footer = () => {
                 <strong>Resources</strong>
               </li>
               <li>
-                <a href="#"> Why Us? </a>
+                <Link href="#"> Why Us? </Link>
               </li>
               <li>
-                <a href="#"> Blog </a>
+                <Link href="#"> Blog </Link>
               </li>
               <li>
-                <a href="#"> Customer Service </a>
+                <Link href="#"> Customer Service </Link>
               </li>
               <li>
-                <a href="#"> Guides </a>
+                <Link href="#"> Guides </Link>
               </li>
 
               <li>
-                <a href="#"> Marketing </a>
+                <Link href="#"> Marketing </Link>
               </li>
               <li>
-                <a href="#"> Media </a>
+                <Link href="#"> Media </Link>
               </li>
             </ul>
             <ul className="mt-8 mr-4 flex-grow space-y-3 whitespace-nowrap md:mt-0">
               <li>
-                <a href=""> Customer Service </a>
+                <Link href=""> Customer Service </Link>
               </li>
               <li>
-                <a href=""> Guides </a>
+                <Link href=""> Guides </Link>
               </li>
 
               <li>
-                <a href=""> Media </a>
+                <Link href=""> Media </Link>
               </li>
             </ul>
             <ul className="mt-8 mr-4 flex-grow space-y-3 whitespace-nowrap md:mt-0">
@@ -80,17 +82,17 @@ export const Footer = () => {
                 <strong>Guides</strong>
               </li>
               <li>
-                <a href=""> Why Us? </a>
+                <Link href=""> Why Us? </Link>
               </li>
               <li>
-                <a href=""> Blog </a>
+                <Link href=""> Blog </Link>
               </li>
 
               <li>
-                <a href=""> Marketing </a>
+                <Link href=""> Marketing </Link>
               </li>
               <li>
-                <a href=""> Media </a>
+                <Link href=""> Media </Link>
               </li>
             </ul>
           </nav>
