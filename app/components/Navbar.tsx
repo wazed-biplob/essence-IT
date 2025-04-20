@@ -1,6 +1,10 @@
+"use client";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export const Navbar = () => {
+  const router = useRouter();
+
   return (
     <>
       <div className=" bg-gray-800">
@@ -47,7 +51,10 @@ export const Navbar = () => {
                 <Link href="#">Policies</Link>
               </li>
               <li className="md:mr-12">
-                <button className="rounded-full border-2 border-white px-6 py-1 font-medium text-white transition-colors hover:bg-white hover:text-gray-700">
+                <button
+                  onClick={() => router.push("/register")}
+                  className="rounded-full border-2 border-white px-6 py-1 font-medium text-white transition-colors hover:bg-white hover:text-gray-700"
+                >
                   Registration
                 </button>
               </li>
